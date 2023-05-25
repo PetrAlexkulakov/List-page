@@ -1,4 +1,3 @@
-import React from 'react';
 import List from "../../pages/List";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
