@@ -1,9 +1,9 @@
-
+import dataJSON from '../../shared/jsonviewer.json';
 
 const List = () => {
   return (
     <div>
-      fds
+      {dataJSON.total}
     </div>
   )
 }
