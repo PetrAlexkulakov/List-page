@@ -7,7 +7,7 @@ const Card = (props: CardProps) => {
     <div>
       <h1 className="underline">{props.title}</h1>
       <p>{props.body}</p>
-      <Button text='See all' link='navigator?tab=0' />
+      <Button text='See all' link={props.link} />
       <p>{props.underBody}</p>
     </div>
   )

@@ -6,7 +6,8 @@ const List = () => {
     <div>
       <Card title='Welcome' 
       body='With supporting as a natural lead-in to additional content.' 
-      underBody={dataJSON.total} />
+      underBody={'You have ' + dataJSON.total + ' transactions'}
+      link='navigator?tab=0' />
     </div>
   )
 }
