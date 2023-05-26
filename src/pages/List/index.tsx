@@ -34,7 +34,10 @@ const List = () => {
       body='With supporting as a natural lead-in to additional content.' 
       underBody={'You have ' + dataJSON.total + ' transactions'}
       link='navigator?tab=0' />
-      <Card title={findAllAmount('income')} body='Income' link='navigator?tab=1' />
+      <Card title={findAllAmount('income')} body='Income' link='navigator?tab=0' />
+      <Card title={findAllAmount('outcome')} body='Outcome' link='navigator?tab=1' />
+      <Card title={findAllAmount('loan')} body='Loans' link='navigator?tab=2' />
+      <Card title={findAllAmount('investment')} body='Investments' link='navigator?tab=3' />
     </div>
   )
 }
