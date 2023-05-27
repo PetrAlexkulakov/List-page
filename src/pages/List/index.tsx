@@ -35,7 +35,8 @@ const List = () => {
         title='Welcome' 
         body='With supporting as a natural lead-in to additional content.' 
         underBody={'You have ' + dataJSON.total + ' transactions'}
-        link='navigator?tab=0' />
+        link='navigator'
+        buttonText='See transactions' />
         <Card className="col-span-1 rounded-lg" title={findAllAmount('income')} body='Income' link='navigator?tab=0' />
         <Card className="col-span-1 rounded-lg order-1" title={findAllAmount('outcome')} body='Outcome' link='navigator?tab=1' />
         <Card className="col-span-1 rounded-lg order-2" title={findAllAmount('loan')} body='Loans' link='navigator?tab=2' />

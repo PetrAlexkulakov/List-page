@@ -1,8 +1,8 @@
 import { ButtonProps } from '@src/shared/interfaces/buttonInterface'
 
-function Button(props: ButtonProps) {
+const Button = (props: ButtonProps) => {
   return (
-    <button>
+    <button className="bg-blue-500 text-white w-40 h-10 rounded-md flex items-center justify-center">
       <a href={props.link}>{props.text}</a>
     </button>
   )

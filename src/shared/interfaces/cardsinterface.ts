@@ -4,4 +4,5 @@ export interface CardProps {
     underBody?: string | number;
     link: string;
     className?: string;
+    buttonText?: string;
 }
