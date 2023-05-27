@@ -5,7 +5,7 @@ import Button from '../Button';
 const Card = (props: CardProps) => {
   return (
     <div className={'border border-black ' + props.className}>
-      <h1 className='m-4'>{props.title}</h1>
+      <h1 className='m-4 font-bold'>{props.title}</h1>
       <p className='m-4'>{props.body}</p>
       <div className="flex justify-end m-4">
         <Button text={props.buttonText || 'See all'} link={props.link} />
