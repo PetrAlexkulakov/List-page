@@ -29,15 +29,18 @@ const List = () => {
   }
 
   return (
-    <div>
-      <Card title='Welcome' 
-      body='With supporting as a natural lead-in to additional content.' 
-      underBody={'You have ' + dataJSON.total + ' transactions'}
-      link='navigator?tab=0' />
-      <Card title={findAllAmount('income')} body='Income' link='navigator?tab=0' />
-      <Card title={findAllAmount('outcome')} body='Outcome' link='navigator?tab=1' />
-      <Card title={findAllAmount('loan')} body='Loans' link='navigator?tab=2' />
-      <Card title={findAllAmount('investment')} body='Investments' link='navigator?tab=3' />
+    <div className="flex justify-center items-center h-screen">
+      <div className="w-80 grid grid-cols-2 gap-4">
+        <Card className="col-span-2"
+        title='Welcome' 
+        body='With supporting as a natural lead-in to additional content.' 
+        underBody={'You have ' + dataJSON.total + ' transactions'}
+        link='navigator?tab=0' />
+        <Card className="col-span-1 rounded-lg" title={findAllAmount('income')} body='Income' link='navigator?tab=0' />
+        <Card className="col-span-1 rounded-lg" title={findAllAmount('outcome')} body='Outcome' link='navigator?tab=1' />
+        <Card className="col-span-1 rounded-lg" title={findAllAmount('loan')} body='Loans' link='navigator?tab=2' />
+        <Card className="col-span-1 rounded-lg" title={findAllAmount('investment')} body='Investments' link='navigator?tab=3' />
+      </div>
     </div>
   )
 }

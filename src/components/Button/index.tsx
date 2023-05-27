@@ -1,5 +1,4 @@
 import { ButtonProps } from '@src/shared/interfaces/buttonInterface'
-import React from 'react'
 
 function Button(props: ButtonProps) {
   return (
@@ -7,4 +6,4 @@ function Button(props: ButtonProps) {
   )
 }
 
-export default Button
+export default Button;

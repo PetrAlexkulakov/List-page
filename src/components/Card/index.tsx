@@ -4,11 +4,17 @@ import Button from '../Button';
 
 const Card = (props: CardProps) => {
   return (
-    <div>
-      <h1 className="underline">{props.title}</h1>
-      <p>{props.body}</p>
-      <Button text='See all' link={props.link} />
-      <p>{props.underBody}</p>
+    <div className={'border-2 border-black ' + props.className}>
+      <h1 className='m-2'>{props.title}</h1>
+      <p className='m-2'>{props.body}</p>
+      <div className="flex justify-end m-2">
+        <Button text='See all' link={props.link} />
+      </div>
+      {props.underBody && (
+      <div className="flex justify-center border-t border-black">
+        <p className='m-2'>{props.underBody}</p>
+      </div>
+      )}
     </div>
   )
 }

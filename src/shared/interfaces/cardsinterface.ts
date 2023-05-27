@@ -3,4 +3,5 @@ export interface CardProps {
     body: string;
     underBody?: string | number;
     link: string;
+    className?: string;
 }
